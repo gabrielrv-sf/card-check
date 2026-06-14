@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Acesso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Digite o número correto para acessar a foto:</h2>
+        <input type="number" id="numeroInput" placeholder="Digite aqui...">
+        <button onclick="verificarNumero()">Acessar</button>
+        <p id="mensagemErro" style="color: red; margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function verificarNumero() {
+            const numeroDigitado = document.getElementById('numeroInput').value;
+            const numeroCorreto = "2026"; // Altere aqui para o número que você quiser
+
+            if (numeroDigitado === numeroCorreto) {
+                // Redireciona para a segunda página
+                window.location.href = "sucesso.html";
+            } else {
+                // Exibe mensagem de erro se estiver errado
+                document.getElementById('mensagemErro').innerText = "Número incorreto! Tente novamente.";
+            }
+        }
+    </script>
+</body>
+</html>

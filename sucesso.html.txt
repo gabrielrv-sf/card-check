@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Permitido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Parabéns, você acertou!</h2>
+        <p>Aqui está a sua foto:</p>
+        <img src="foto.jpg" alt="Foto Secreta" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <br><br>
+        <a href="index.html">Voltar para o início</a>
+    </div>
+</body>
+</html>
